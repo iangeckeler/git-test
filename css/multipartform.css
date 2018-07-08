@@ -1,0 +1,21 @@
+.carousel-item {
+    height: 450px;
+    width:auto
+    position: relative;
+}
+.btn-row {
+    position:absolute;
+    bottom: 0;
+}
+
+.modal-header {
+    border: none;
+}
+
+input[type="radio"]{
+    visibility:hidden;
+}
+
+input[type="checkbox"]{
+    visibility:hidden;
+}

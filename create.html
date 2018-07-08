@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/multipartform.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- /Start your project here-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Create a New Challenge
+</button>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-height modal-fluid modal-top" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src='img/coefficient-logo.png' class='img-fluid'>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                               <!-- progress bar -->
+                <div class="progress">
+                  <div class="progress-bar" id='theprogressbar' role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <!-- myCarousel -->
+                <div id="myCarousel" class="carousel slide pt-5" data-ride="carousel" data-interval='false'>
+
+                          <div class="carousel-inner" role="listbox">
+                           <!--form pt 1 -->
+                            <form>
+                            <div class="carousel-item active">
+                                <div class="container-fluid text-align-center">
+                                <!-- radio question one -->
+                               <h1>What's your industry?</h1>
+                                <div class="d-flex flex-column pt-4" data-toggle="buttons">
+                                  <label class="btn btn-primary active next-button">
+                                    <input type="radio" value='ecommerce' name="options" id="option1" autocomplete="off"> Ecommerce
+                                  </label>
+                                  <label class="btn btn-primary next-button">
+                                    <input type="radio" value='fintech' name="options" id="option2" autocomplete="off"> Fintech
+                                  </label>
+                                  <label class="btn btn-primary next-button">
+                                    <input type="radio" value = 'medical' name="options" id="option3" autocomplete="off"> Medical
+                                  </label>
+                                </div>
+                                <!-- /radio question -->
+
+                                </div>
+                            </div>
+                            <!-- /end first item -->
+                            <!--form pt 2 -->
+                            <div class="carousel-item">
+                                <!-- radio question one -->
+                               <h1>What are your marketing goals?</h1>
+                                <div class="d-flex flex-column pt-4" data-toggle="buttons">
+                                  <label class="btn btn-primary active">
+                                    <input type="checkbox" name="options2" value='website' id="option1" autocomplete="off" checked> Website Optimization
+                                  </label>
+                                  <label class="btn btn-primary">
+                                    <input type="checkbox" name="options2" value='ads' id="option2" autocomplete="off"> Social Media Advertising
+                                  </label>
+                                  <label class="btn btn-primary">
+                                    <input type="checkbox" name="options2" value='video' id="option3" autocomplete="off"> Video Package
+                                  </label>
+                                  <button class="btn btn-secondary btn-lg next-button">I've Checked All That Apply</button>
+                                </div>
+                                <!-- /radio question -->
+                                        <!-- middle buttons  -->
+                                       <div class="d-flex flex-row-reverse btn-row">
+                                            <div class="p-2">
+                                            <button class="btn btn-unique back-button">Back</button>
+                                            </div>
+
+                                        </div>
+                            </div>
+                            <!--form pt 3 -->
+                            <div class="carousel-item">
+                                       <!-- Material form register -->
+                                    <p class="h4 text-center mb-4">Want Free Marketing Advice?</p>
+
+                                    <!-- Material input text -->
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" name='name' id="materialFormRegisterNameEx" class="form-control">
+                                        <label for="materialFormRegisterNameEx">Your name</label>
+                                    </div>
+
+                                    <!-- Material input email -->
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix grey-text"></i>
+                                        <input type="email" name='email' id="materialFormRegisterEmailEx" class="form-control">
+                                        <label for="materialFormRegisterEmailEx">Your email</label>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                    <div class="p-2">
+                                           <button class="btn btn-unique form-button" type='submit'>Get Started</button>
+                                    </div>
+                                    </div>
+                                <!-- Material form register -->
+                                <!-- final buttons  -->
+                                <div class="d-flex flex-row btn-row">
+                                    <div class="p-2">
+                                           <button class="btn btn-unique back-button">Back</button>
+                                    </div>
+                                    </div>
+                            </div>
+                            <!--form pt 4 -->
+                            <div class="carousel-item">
+                                       <!-- Material form register -->
+                                    <p class="h4 text-center mb-4">Thanks! We'll Be in Touch!</p>
+                                    <div class="d-flex flex-row justify-content-center p-2">
+                                              <div class="flex-item">
+                                           <button class="btn btn-unique back-button close-button" data-dismiss="modal" aria-label="Close">Back to Site</button></div>
+                                    </div>
+                                <!-- final buttons  -->
+                                <div class="d-flex flex-row btn-row">
+                                    <div class="p-2">
+                                           <button class="btn btn-unique back-button">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/multipartform.js"></script>
+</body>
+
+</html>
