@@ -1,15 +1,8 @@
 //mongodb://<dbuser>:<dbpassword>@ds131551.mlab.com:31551/challenge_app
 
 
-//Set up mongoose connection
-var mongoose = require('mongoose');
-var mongoDB = 'mongodb://challengeapp:312Arizona@ds131551.mlab.com:31551/challenge_app';
-mongoose.connect(mongoDB);
-mongoose.Promise = global.Promise;
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-const User = require('')
+//const User = require('')
 
 //how to create an instance
 /*

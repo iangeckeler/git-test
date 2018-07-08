@@ -18,4 +18,4 @@ var challengeSchema = new Schema(
 var Challenge = mongoose.model('Challenge',challengeSchema)
 
 //Export model
-module.exports = mongoose.model('Challenge', challengeSchema);
+module.exports = Challenge

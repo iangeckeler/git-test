@@ -1,13 +1,28 @@
+
+// require packages
 const mocha = require('mocha');
 const assert = require('assert')
+//database
+const User = require('../models/user.js')
+//require database
+require('../app.js')
+
+
 // describes the test within it
-describe('some demo tests',function() {
+describe('database',function() {
 
 //function where the tests occur create them
 //it block creates two tests
-it('adds two functions together',function(){
+it('saves a record', function(done){
+  var newuser = new User({
+    user_id: 'ikcgeckeler',
+    password: 'johnathan'
+  });
 
-  assert(2+3 === 5);
+  newuser.save().then(function(){
+    assert(newuser.isNew===false)
+    done();
+  });
 })
 
 
