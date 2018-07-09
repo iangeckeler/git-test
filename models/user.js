@@ -6,7 +6,8 @@ var Schema = mongoose.Schema;
 var userSchema = new Schema(
   {
     user_id: {type: String, required: true, max: 100},
-    password: {type: String, required: true, max: 100},
+    email: String,
+    password: {type: String, max: 100},
     challenges: [{type: Schema.Types.ObjectId, ref: 'Challenge'}]
   }
 );

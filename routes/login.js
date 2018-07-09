@@ -3,6 +3,8 @@ const User = require('../models/user.js')
 const mongoose = require('mongoose')
 const router = require('express').Router();
 const bodyParser = require('body-parser')
+//pull in user schema
+//const User = require('../models/user.js')
 
 
 //body-parser
@@ -16,6 +18,13 @@ const assert = require('assert')
     })
 
     router.post('/addUser',(req,res)=>{
-      console.log(req.body)
+      //create and save new user
+      var newuser = new User({
+        user_id: req.body.user_id,
+        email: req.body.email
+      });
+
+      newuser.save().then(function(){
     })
+  })
     module.exports=router;
