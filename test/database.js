@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 
 before(function(done){
   //require database
-  require('../app.js')
+  var app = require('../app.js')
   done()
 })
 
