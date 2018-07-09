@@ -4,25 +4,46 @@ const mocha = require('mocha');
 const assert = require('assert')
 //database
 const User = require('../models/user.js')
-//require database
-require('../app.js')
+const mongoose = require('mongoose')
 
 
-// describes the test within it
-describe('database',function() {
+before(function(done){
+  //require database
+  require('../app.js')
+  done()
+})
 
-//function where the tests occur create them
-//it block creates two tests
-it('saves a record', function(done){
+beforeEach(function(done){
+  //drop collection
+  mongoose.connection.collections.users.drop(function(){
+    done()
+  })
+})
+
+beforeEach(function(done){
   var newuser = new User({
     user_id: 'ikcgeckeler',
     password: 'johnathan'
   });
 
   newuser.save().then(function(){
-    assert(newuser.isNew===false)
-    done();
-  });
+    done()
+  })
+})
+
+// describes the test within it
+describe('database',function() {
+
+//function where the tests occur create them
+//it block creates two tests
+it('finds a record', function(done){
+
+  User.findOne({password:'johnathan'}).then(function(result){
+    assert(result.password === 'johnathan');
+    done()
+  })
+
+
 })
 
 
