@@ -22,19 +22,19 @@
     <!-- Material form login -->
     <div class="login-container">
 
-<form>
+<form method='post' action='/addUser'>
     <p class="h4 text-center mb-4">Sign in</p>
     <!-- Material input email -->
     <div class="md-form">
         <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" id="materialFormLoginEmailEx" class="form-control">
+        <input name='email' type="email" id="materialFormLoginEmailEx" class="form-control">
         <label for="materialFormLoginEmailEx">Your email</label>
     </div>
 
     <!-- Material input password -->
     <div class="md-form">
         <i class="fa fa-lock prefix grey-text"></i>
-        <input type="password" id="materialFormLoginPasswordEx" class="form-control">
+        <input name="firstname" type="password" id="materialFormLoginPasswordEx" class="form-control">
         <label for="materialFormLoginPasswordEx">Your password</label>
     </div>
 

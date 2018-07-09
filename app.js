@@ -23,7 +23,7 @@ mongoose.connection.once('open',function(){
 const loginRoutes = require('./routes/login.js')
 
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json
 app.use(bodyParser.json())
 //static files
@@ -34,8 +34,8 @@ app.set('view engine','ejs')
 app.set('views','views')
 
 //setup routes
-//app.use('/',loginRoutes)
+app.use('/',loginRoutes)
 
 app.get('/',function(req,res){
-  res.render('login')
+  res.render('create')
 })
